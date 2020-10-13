@@ -30,33 +30,4 @@ jobs:
 
         overwrite: true
         source: "./*"
-        target: "/var/www/edionme.com"
-
-    configure-laravel:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Configure laravel
-        uses: appleboy/ssh-action@master
-        with:
-        host: @php
-        echo '${{ secrets.HOST }}'
-    @endphp
-
-        username: @php
-            echo '${{ secrets.USERNAME }}'
-        @endphp
-
-        key: @php
-            echo '${{ secrets.KEY }}'
-        @endphp
-
-        port: @php
-            echo '${{ secrets.PORT }}'
-        @endphp
-
-            script: |
-            cp ~/edionme.com/.env /var/www/edionme.com/.env
-            cd /var/www/edionme.com
-            composer install --optimize-autoloader --no-dev
-
-            php artisan optimize
+        target: "/var/www/growbeans"
