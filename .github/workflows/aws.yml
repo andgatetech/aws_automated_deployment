@@ -1,8 +1,10 @@
 # AWS automated deployment -
-name: Deploy
 on:
-    push:
-    branches: [ master ]
+  push:
+    branches:
+      - master
+
+name: DEV Build to Amazon EC@
 
 jobs:
     copy-files:
