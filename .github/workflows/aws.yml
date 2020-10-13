@@ -1,4 +1,4 @@
-# AWS automated deployment -
+# AWS automated deployment --
 on:
   push:
     branches:
