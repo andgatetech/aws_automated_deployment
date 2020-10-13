@@ -12,9 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-
-    - name: copy files
-      uses: appleboy/scp-action@v0.1.1
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
