@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: copy files
-        uses: ItsKarma/aws-cli@v1.70.0
+        uses: appleboy/scp-action@v0.1.1
         with:
         host: @php
         echo '${{ secrets.HOST }}'
