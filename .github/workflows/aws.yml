@@ -12,11 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+
+    - name: copy files
+      uses: appleboy/scp-action@v0.1.1
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
+        script: |
+          sudo chmod 777 -R /var/www/growbeans
         overwrite: true
         source: "./*"
         target: "/var/www/growbeans"
