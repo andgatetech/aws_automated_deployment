@@ -1,3 +1,3 @@
 <?php
-echo "Hey there! You able to deploy successfully.";
+echo "Hey there! Hurrah, you able to deploy successfully.";
 ?>
