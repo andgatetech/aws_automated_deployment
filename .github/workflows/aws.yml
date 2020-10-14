@@ -1,4 +1,4 @@
-name: Continuous Deployment at AWS Dev
+name: Continuous Deployment at AWS
 on:
   push:
     branches: [ master ]
