@@ -24,7 +24,7 @@ jobs:
         git add -f public/
         git commit -m "Build front-end assets"
         git push -f origin deploy
-    - name: Deploy to production
+    - name: Deploy to Dev Server
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
